@@ -30,7 +30,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoia2FpbGFsZWUiLCJhIjoiY2t0ZDl5d2V6MmRwcTJubzA2a
 // Below, we set up a 'map' variable which is a new map, with a standard style
 var map = new mapboxgl.Map({
   container: 'map', // container id
-  style: 'mapbox://styles/mapbox/light-v10', // stylesheet location
+  style: 'mapbox://styles/kailalee/cktda21oj14xh17o3moosfips', // stylesheet location
   center: [18.4655, 66.1057], // starting position
   zoom: 5 // starting zoom
 });
@@ -40,51 +40,6 @@ var geolocate = new mapboxgl.GeolocateControl({
   },
   trackUserLocation: true
 });
-
-var geojson = {
-  type: 'FeatureCollection',
-  features: [
-    {
-      type: 'Feature',
-      properties: {
-        Title: 'San Pablo Creek'
-      },
-      geometry: {
-        type: 'Point',
-        coordinates: [
-          -122.23371505737305,
-          37.9192844858339
-        ]
-      }
-    },
-    {
-      type: 'Feature',
-      properties: {
-        Title: 'Briones Reservoir'
-      },
-      geometry: {
-        type: 'Point',
-        coordinates: [
-          -122.18461990356444,
-          37.92321155405647
-        ]
-      }
-    },
-    {
-      type: 'Feature',
-      properties: {
-        Title: 'Lafayette Reservoir'
-      },
-      geometry: {
-        type: 'Point',
-        coordinates: [
-          -122.13809967041017,
-          37.88325400922058
-        ]
-      }
-    }
-  ]
-};
 // map.on(functions) at the bottom!
 
 
@@ -100,7 +55,7 @@ map.addControl(geolocate);
       type: 'symbol',
       source: 'points',
       layout: {
-        'icon-image': 'car', // more icons here: https://labs.mapbox.com/maki-icons/editor/
+        'icon-image': 'car-15', // more icons here: https://labs.mapbox.com/maki-icons/editor/
         'icon-allow-overlap': true
       },
       paint: { }
